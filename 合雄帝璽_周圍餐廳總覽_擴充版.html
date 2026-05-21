@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>合雄帝璽周圍10公里餐廳總覽 - 擴充版</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; max-width: 1100px; margin: 0 auto; padding: 20px; background: #f8f9fa; color: #333; }
+  h1 { font-size: 1.5em; border-bottom: 3px solid #d32f2f; padding-bottom: 8px; margin-bottom: 12px; }
+  .note { background: #fff3e0; border-left: 4px solid #ff9800; padding: 10px 16px; margin: 16px 0; border-radius: 3px; font-size: 0.9em; line-height: 1.5; }
+  .filter-bar { display: flex; align-items: center; gap: 10px; margin: 16px 0; flex-wrap: wrap; }
+  .filter-bar label { font-weight: bold; font-size: 0.95em; }
+  .filter-bar select, .filter-bar input { padding: 8px 14px; font-size: 1em; border-radius: 6px; border: 1px solid #ccc; background: #fff; cursor: pointer; }
+  .filter-bar input { cursor: text; }
+  .filter-bar .count { font-size: 0.85em; color: #666; margin-left: auto; }
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 6px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.08); margin: 12px 0 24px; display: none; }
+table.active { display: table; }
+caption { caption-side: top; text-align: left; font-weight: bold; font-size: 1.1em; padding: 6px 0; }
+  th { background: #37474f; color: #fff; padding: 10px 12px; text-align: left; font-size: 0.85em; white-space: nowrap; }
+  td { padding: 10px 12px; border-bottom: 1px solid #e0e0e0; font-size: 0.9em; vertical-align: top; }
+  tr:hover { background: #f5f5f5; }
+  a { color: #1565c0; text-decoration: none; }
+  a:hover { text-decoration: underline; color: #0d47a1; }
+  .badge { display: inline-block; font-size: 0.75em; padding: 2px 8px; border-radius: 10px; margin-left: 4px; }
+  .badge-green { background: #e8f5e9; color: #2e7d32; }
+  .badge-orange { background: #fff3e0; color: #e65100; }
+  .badge-red { background: #ffebee; color: #c62828; }
+  .badge-blue { background: #e3f2fd; color: #1565c0; }
+  .badge-purple { background: #f3e5f5; color: #6a1b9a; }
+  .badge-teal { background: #e0f2f1; color: #004d40; }
+  .footer { text-align: center; font-size: 0.8em; color: #999; margin-top: 30px; padding-top: 12px; border-top: 1px solid #ddd; }
+  .area-title { font-size: 1.1em; background: #37474f; color: #fff; padding: 6px 14px; border-radius: 4px; display: inline-block; margin: 20px 0 10px; }
+  @media (max-width: 700px) { td, th { font-size: 0.8em; padding: 6px 8px; } }
+</style>
+</head>
+<body>
+<h1>合雄帝璽（桃園藝文特區）周圍10公里<br>餐廳分類總覽 - 擴充版</h1>
+<div class="note">
+  <strong>📍 合雄帝璽位置：</strong>桃園市桃園區中正路／同德二街122號（藝文特區核心）<br>
+  <strong>🗓️ 資料更新：</strong>2026年5月　｜　<strong>⚠️ 營業時間可能變動，建議出發前先致電確認</strong>
+</div>
+<div class="filter-bar">
+  <label for="cat">分類篩選：</label>
+  <select id="cat">
+    <option value="all">全部顯示</option>
+    <option value="japanese">日式料理</option>
+    <option value="chinese">中式料理</option>
+    <option value="taiwanese">台式料理</option>
+    <option value="southeast-asian">東南亞料理</option>
+    <option value="european">歐式料理</option>
+    <option value="korean">韓式料理</option>
+    <option value="american">美式料理</option>
+    <option value="street-food">台式街邊小吃</option>
+  </select>
+  <input type="text" id="q" placeholder="搜尋店名或地址..." style="padding:8px 14px;font-size:1em;border-radius:6px 0 0 6px;border:1px solid #ccc;border-right:none;width:200px;vertical-align:middle;">
+  <button id="clearBtn" style="padding:8px 12px;font-size:1em;border:1px solid #ccc;border-radius:0 6px 6px 0;background:#fff;cursor:pointer;vertical-align:middle;" title="清除搜尋">✕</button>
+  <span class="count" id="cnt">載入中…</span>
+</div>
+<!-- ==================== 日式料理 ==================== -->
+<table id="table-japanese" data-cat="japanese">
+<caption style="caption-side:top;text-align:left;font-weight:bold;font-size:1.1em;padding:6px 0;">🍣 日式料理</caption>
+<thead><tr><th>店名</th><th>地址</th><th>營業時間</th><th>類型</th></tr></thead>
+<tbody>
+<tr><td><a href="https://maps.google.com/?q=欣葉日本料理+桃園" target="_blank">欣葉日本料理 中茂店</a></td><td>同德五街67號10樓中茂新天地</td><td>平午餐 11:30-15:00<br>平晚餐 17:30-21:30<br>假日兩時段</td><td><span class="badge badge-red">日式Buffet吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=旭集和食集錦+桃園" target="_blank">旭集和食集錦 中茂店</a></td><td>同德五街67號中茂新天地</td><td>午餐 11:30-14:00<br>晚餐 17:30-21:30</td><td><span class="badge badge-red">日式Buffet吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=坐著做日本料理+桃園" target="_blank">坐著做日本料理 藝文店</a></td><td>同德五街69號4樓中茂新天地</td><td>午餐 11:30-14:00<br>晚餐 17:30-21:30</td><td><span class="badge badge-orange">無菜單料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=一鰭會+桃園" target="_blank">一鰭會 日本料理</a></td><td>同德五街69號中茂新天地</td><td>11:30-14:00、17:30-21:30</td><td><span class="badge badge-red">無菜單日式會席</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=老乾杯+桃園" target="_blank">老乾杯 桃園中茂店</a></td><td>同德五街中茂新天地</td><td>11:30-14:30、17:00-23:00</td><td><span class="badge badge-red">日式燒肉/和牛</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=和牛涮+桃園" target="_blank">和牛涮 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-23:00</td><td><span class="badge badge-red">和牛火鍋吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=本壽司+桃園" target="_blank">本壽司</a></td><td>莊二街101號</td><td>12:00-14:00、18:00-21:30<br><strong>週二公休</strong></td><td><span class="badge badge-orange">無菜單壽司</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=森日式料理+桃園" target="_blank">森日式料理</a></td><td>經國路336巷86號</td><td>11:30-14:30、17:00-22:00</td><td><span class="badge badge-blue">日式景觀餐廳</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=東街日本料理+桃園" target="_blank">東街日本料理 旗艦店</a></td><td>溫州一路61號</td><td>11:00-14:00、17:00-21:00</td><td><span class="badge badge-green">台式日料/合菜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=老賊壽司+桃園" target="_blank">老賊壽司</a></td><td>中正路328號</td><td>06:00-20:00<br><strong>週一、二公休</strong></td><td><span class="badge badge-green">平價壽司/小吃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=宗初食堂+桃園" target="_blank">宗初食堂 桃園分店</a></td><td>民有三街483號</td><td>11:30-15:30、17:30-21:30</td><td><span class="badge badge-orange">無菜單日料</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=松屋+桃園南平" target="_blank">松屋 桃園南平店</a></td><td>南平路336號1樓</td><td><strong>05:00-隔天04:00</strong></td><td><span class="badge badge-green">平價牛丼/定食</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=小料理食事處+桃園" target="_blank">小料理食事處</a></td><td>建國路131號</td><td>17:30-01:00</td><td><span class="badge badge-red">日式居酒屋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=恆八味屋+桃園" target="_blank">恆八味屋 日式鍋物</a></td><td>中正路近同德二街</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">日式火鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=匠夯日式無煙燒肉+桃園" target="_blank">匠夯日式無煙燒肉</a></td><td>大興西路一段藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">日式燒肉吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=尼匠燒肉+桃園" target="_blank">尼匠燒肉 藝文店</a></td><td>中正路近莊敬路</td><td>11:30-14:30、17:30-23:00</td><td><span class="badge badge-red">日式燒肉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=伊笠燒肉+桃園" target="_blank">伊笠燒肉 桃園店</a></td><td>大興西路二段藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">日式燒肉吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=川御燒肉+桃園" target="_blank">川御燒肉</a></td><td>經國路近莊敬路</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">日式燒肉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=枥木屋日式食堂+桃園" target="_blank">枥木屋日式食堂</a></td><td>南平路藝文特區</td><td>11:30-14:00、17:00-21:00</td><td><span class="badge badge-green">日式家庭料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=芝麻有籽日式豬排+桃園" target="_blank">芝麻有籽日式豬排</a></td><td>中正路藝文特區</td><td>11:00-14:30、17:00-21:00</td><td><span class="badge badge-green">日式豬排定食</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=虎藏燒肉丼食所+桃園" target="_blank">虎藏燒肉丼食所</a></td><td>南平路近中正路</td><td>11:00-14:30、17:00-21:00</td><td><span class="badge badge-green">燒肉丼飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=藏壽司+桃園" target="_blank">藏壽司 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-22:00</td><td><span class="badge badge-green">迴轉壽司</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=点爭鮮+桃園" target="_blank">点爭鮮 桃園中正店</a></td><td>中正路近同德二街</td><td>11:00-21:30</td><td><span class="badge badge-green">新幹線壽司</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=爭鮮+桃園" target="_blank">爭鮮迴轉壽司 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:30</td><td><span class="badge badge-green">迴轉壽司</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=WIRED TOKYO+桃園" target="_blank">WIRED TOKYO 桃園藝文店</a></td><td>中正路藝文特區</td><td>11:00-22:00</td><td><span class="badge badge-blue">日式洋食/咖啡</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=原燒+桃園" target="_blank">原燒 日式燒肉 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">日式燒肉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=品田牧場+桃園" target="_blank">品田牧場 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">日式豬排定食</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=藝奇+桃園" target="_blank">藝奇 桃園南華店</a></td><td>南華街藝文特區</td><td>週一~五 11:30-15:30, 17:30-22:30<br>週六日 11:00-15:30, 17:00-22:30</td><td><span class="badge badge-blue">日式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=武田信玄+桃園" target="_blank">武田信玄 日式居酒屋</a></td><td>中壢區中央西路</td><td>17:00-01:00</td><td><span class="badge badge-red">日式居酒屋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=海童日式料理+桃園" target="_blank">海童日式料理</a></td><td>中壢區中正路</td><td>11:30-14:00、17:00-22:00</td><td><span class="badge badge-blue">日式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=坐著做壽司+桃園中壢" target="_blank">坐著做壽司 中壢本店</a></td><td>中壢區愛國路</td><td>12:00-14:00、17:30-22:00</td><td><span class="badge badge-orange">無菜單壽司</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=嶼日式無菜單料理+桃園" target="_blank">嶼日式無菜單料理</a></td><td>中壢區</td><td>12:00-14:00、18:00-21:30</td><td><span class="badge badge-red">無菜單日料</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鮨水之花+桃園" target="_blank">鮨水之花</a></td><td>中壢區中央東路</td><td>12:00-14:00、18:00-21:30</td><td><span class="badge badge-red">無菜單壽司</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鮨吾七+桃園" target="_blank">鮨吾七</a></td><td>桃園區藝文特區周邊</td><td>12:00-14:00、18:00-21:30</td><td><span class="badge badge-red">無菜單壽司</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=東風舞之磯+桃園" target="_blank">東風舞之磯</a></td><td>中壢區</td><td>11:30-14:00、17:30-21:30</td><td><span class="badge badge-red">日式會席料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=三柒燒肉+桃園" target="_blank">三柒燒肉</a></td><td>中壢區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">日式燒肉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=小野食堂+桃園" target="_blank">小野食堂 日式定食</a></td><td>同德十一街藝文特區</td><td>11:30-14:30、17:00-21:00</td><td><span class="badge badge-green">日式定食</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=勝政豬排+桃園" target="_blank">勝政豬排 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:30</td><td><span class="badge badge-blue">日式豬排</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大戶屋+桃園" target="_blank">大戶屋 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-22:00</td><td><span class="badge badge-blue">日式定食</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=百八魚場+桃園" target="_blank">百八魚場 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:30</td><td><span class="badge badge-green">平價生魚片/定食</span></td></tr>
+</tbody>
+</table><!-- ==================== 中式料理 ==================== -->
+<table id="table-chinese" data-cat="chinese">
+<caption style="caption-side:top;text-align:left;font-weight:bold;font-size:1.1em;padding:6px 0;">🥟 中式料理</caption>
+<thead><tr><th>店名</th><th>地址</th><th>營業時間</th><th>類型</th></tr></thead>
+<tbody>
+<tr><td><a href="https://maps.google.com/?q=享鴨+桃園" target="_blank">享鴨 桃園店</a></td><td>同德五街77號中茂新天地</td><td>11:30-14:00、17:30-21:30</td><td><span class="badge badge-red">烤鴨/中式合菜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=開飯川食堂+桃園" target="_blank">開飯川食堂 桃園店</a></td><td>同德五街77號中茂新天地</td><td>11:30-14:00、17:30-21:30</td><td><span class="badge badge-red">川菜/麻辣</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=這一鍋+桃園" target="_blank">這一鍋 皇室秘藏鍋物 同德店</a></td><td>同德五街69號中茂新天地</td><td>11:30-14:00、17:30-22:30</td><td><span class="badge badge-red">中式鍋物</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=青花驕+桃園" target="_blank">青花驕 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:00、17:30-22:30</td><td><span class="badge badge-red">麻辣鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=問鼎+桃園" target="_blank">問鼎 麻辣鍋 桃園中茂店</a></td><td>同德五街中茂新天地</td><td>11:30-14:30、17:30-22:30</td><td><span class="badge badge-red">麻辣鍋/吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=小福利麻辣鍋+桃園" target="_blank">小福利麻辣鍋 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">麻辣鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鼎王+桃園" target="_blank">鼎王麻辣鍋 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-04:00</td><td><span class="badge badge-red">麻辣鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=岩漿火鍋+桃園" target="_blank">岩漿火鍋 桃園藝文店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:30</td><td><span class="badge badge-red">麻辣鍋/鴛鴦鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=超夯川+桃園" target="_blank">超夯川 麻辣鍋</a></td><td>大興西路一段藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">麻辣鍋吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=村民食堂+桃園" target="_blank">村民食堂</a></td><td>中正路藝文特區</td><td>11:00-22:00</td><td><span class="badge badge-blue">中式簡餐/港點</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=星上星+桃園" target="_blank">星上星 港式飲茶</a></td><td>同德五街中茂新天地旁</td><td>11:00-14:00、17:00-21:30</td><td><span class="badge badge-orange">港式點心/粵菜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=永芯茶檔+桃園" target="_blank">永芯茶檔 港式茶餐廳</a></td><td>中正路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-blue">港式茶餐廳</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=莆田+桃園" target="_blank">莆田 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:00、17:30-21:30</td><td><span class="badge badge-red">福建菜/新加坡米其林</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=福粵樓+桃園" target="_blank">福粵樓 港式海鮮</a></td><td>大興西路一段藝文特區</td><td>11:30-14:00、17:30-21:30</td><td><span class="badge badge-red">粵菜/海鮮</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=廣德海鮮+桃園" target="_blank">廣德海鮮 餐廳</a></td><td>經國路藝文特區</td><td>11:30-14:00、17:00-21:30</td><td><span class="badge badge-red">中式海鮮/合菜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=柚子花花+桃園" target="_blank">柚子花花 客家菜</a></td><td>大興西路二段藝文特區</td><td>11:00-14:00、17:00-21:00</td><td><span class="badge badge-blue">客家料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=七彩雲南+桃園" target="_blank">七彩雲南 桃園店</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-21:00</td><td><span class="badge badge-blue">雲南料理/米干</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=春水堂+桃園" target="_blank">春水堂 桃園中正店</a></td><td>中正路藝文特區</td><td>10:00-22:00</td><td><span class="badge badge-blue">中式茶飲/簡餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=聚鍋物+桃園" target="_blank">聚 鍋物 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-23:00</td><td><span class="badge badge-blue">個人鍋/涮涮鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=這一小鍋+桃園" target="_blank">這一小鍋 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-22:00</td><td><span class="badge badge-green">個人鍋物</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=品香殿砂鍋粥+桃園" target="_blank">品香殿砂鍋粥</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-21:30</td><td><span class="badge badge-orange">砂鍋粥/熱炒</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=丰禾+桃園" target="_blank">丰禾 台式小館</a></td><td>中正路藝文特區</td><td>11:30-14:00、17:30-21:30</td><td><span class="badge badge-blue">台式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=真珠台菜+桃園" target="_blank">真珠台菜 桃園店</a></td><td>中正路藝文特區</td><td>11:30-14:00、17:30-21:30</td><td><span class="badge badge-red">台菜/宴席</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=王品牛排+桃園" target="_blank">王品牛排 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">牛排/西餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=夏慕尼+桃園" target="_blank">夏慕尼 鐵板燒 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">法式鐵板燒</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=三妹四川麵食+桃園" target="_blank">三妹四川麵食</a></td><td>南平路藝文特區</td><td>11:00-14:30、17:00-21:00</td><td><span class="badge badge-orange">四川麵食/紅油抄手</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=牛山牛肉麵+桃園" target="_blank">牛山牛肉麵</a></td><td>同德六街藝文特區</td><td>11:00-14:30、17:00-20:30</td><td><span class="badge badge-green">牛肉麵/滷味</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=巧合珍牛肉麵+桃園" target="_blank">巧合珍牛肉麵</a></td><td>中正路藝文特區</td><td>10:30-20:30</td><td><span class="badge badge-green">牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=老吳商行+桃園" target="_blank">老吳商行 牛肉麵</a></td><td>民生路藝文特區周邊</td><td>11:00-14:30、17:00-21:00</td><td><span class="badge badge-green">牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=攪攪風味小火鍋+桃園" target="_blank">攪攪風味小火鍋</a></td><td>中正路藝文特區</td><td>11:00-22:00</td><td><span class="badge badge-green">個人小火鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大紅袍+桃園" target="_blank">大紅袍 麻辣鍋</a></td><td>大興西路一段藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">麻辣鍋/重慶火鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=四海遊龍+桃園中正" target="_blank">四海遊龍 桃園中正店</a></td><td>中正路藝文特區</td><td>10:30-21:00</td><td><span class="badge badge-green">鍋貼/水餃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=八丼餡餅粥+桃園" target="_blank">八丼餡餅粥</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-20:30</td><td><span class="badge badge-green">北方麵食/餡餅</span></td></tr>
+</tbody>
+</table>
+<!-- ==================== 台式料理 ==================== -->
+<table id="table-taiwanese" data-cat="taiwanese">
+<caption style="caption-side:top;text-align:left;font-weight:bold;font-size:1.1em;padding:6px 0;">🍚 台式料理</caption>
+<thead><tr><th>店名</th><th>地址</th><th>營業時間</th><th>類型</th></tr></thead>
+<tbody>
+<tr><td><a href="https://maps.google.com/?q=欣葉台菜+桃園" target="_blank">欣葉台菜 中茂店</a></td><td>同德五街67號10樓中茂新天地</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-red">台菜/宴席</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿霞飯店+桃園" target="_blank">阿霞飯店 桃園店</a></td><td>藝文特區大興西路</td><td>11:30-14:00、17:30-21:00</td><td><span class="badge badge-red">經典台菜/台南味</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=巷子口台菜+桃園" target="_blank">巷子口台菜</a></td><td>大興西路一段藝文特區</td><td>11:00-14:00、17:00-21:00</td><td><span class="badge badge-blue">家常台菜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=一葉台灣菜+桃園" target="_blank">一葉台灣菜</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-21:30</td><td><span class="badge badge-blue">台灣家常菜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=台雞店+桃園" target="_blank">台雞店 中正店</a></td><td>中正路近莊敬路</td><td>11:00-14:00、17:00-21:00</td><td><span class="badge badge-orange">雞肉料理/白斬雞</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=正宗土雞肉+桃園" target="_blank">正宗土雞肉</a></td><td>中正路藝文特區</td><td>10:30-20:30</td><td><span class="badge badge-green">平價雞肉飯/便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鵝肉榮+桃園" target="_blank">鵝肉榮</a></td><td>同德六街藝文特區</td><td>11:00-20:30<br><strong>週一公休</strong></td><td><span class="badge badge-green">鵝肉專賣</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=南平鵝肉+桃園" target="_blank">南平鵝肉</a></td><td>南平路藝文特區</td><td>10:30-20:30</td><td><span class="badge badge-green">鵝肉專賣</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=周舍鵝肉+桃園" target="_blank">周舍鵝肉</a></td><td>中正路藝文特區</td><td>11:00-20:30</td><td><span class="badge badge-green">鵝肉專賣</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大楊梅鵝莊+桃園" target="_blank">大楊梅鵝莊</a></td><td>大興西路一段藝文特區</td><td>11:00-14:30、17:00-21:00</td><td><span class="badge badge-orange">鵝肉料理/合菜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=呷七碗+桃園" target="_blank">呷七碗 桃園中正店</a></td><td>中正路藝文特區</td><td>10:30-20:00</td><td><span class="badge badge-green">米食/油飯/滷肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鬍鬚張+桃園南平" target="_blank">鬍鬚張 桃園南平店</a></td><td>南平路藝文特區</td><td>10:30-22:00</td><td><span class="badge badge-green">滷肉飯/便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=尬鍋+桃園" target="_blank">尬鍋 台式火鍋</a></td><td>中正路藝文特區</td><td>11:30-22:00</td><td><span class="badge badge-blue">台式火鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=一番地壽喜燒+桃園" target="_blank">一番地壽喜燒 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-22:00</td><td><span class="badge badge-red">壽喜燒吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大麻鍋物+桃園" target="_blank">大麻鍋物</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">個人鍋物</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=福柒涮涮鍋+桃園" target="_blank">福柒涮涮鍋</a></td><td>南平路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-blue">涮涮鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=極禾鍋物+桃園" target="_blank">極禾鍋物 桃園藝文店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-blue">鍋物/涮涮鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=圓味涮涮鍋+桃園" target="_blank">圓味涮涮鍋 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-green">個人涮涮鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=敝姓鍋+桃園" target="_blank">敝姓鍋 桃園藝文店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:00-22:00</td><td><span class="badge badge-green">個人小火鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=肉多多火鍋+桃園" target="_blank">肉多多火鍋 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">火鍋吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=三樂鐵板燒+桃園" target="_blank">三樂鐵板燒 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:30</td><td><span class="badge badge-blue">鐵板燒</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=The Fire著火牛排+桃園" target="_blank">The Fire 著火牛排</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">牛排/鐵板</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大同滷肉飯+桃園" target="_blank">大同滷肉飯</a></td><td>中正路藝文特區</td><td>06:00-14:00<br><strong>週日公休</strong></td><td><span class="badge badge-green">滷肉飯/小菜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=金大鋤+桃園" target="_blank">金大鋤 壽喜燒</a></td><td>大興西路一段藝文特區</td><td>11:00-22:00</td><td><span class="badge badge-red">壽喜燒吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=睦月亭+桃園" target="_blank">睦月亭 壽喜燒</a></td><td>同德六街藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-red">壽喜燒吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=桃源號魯肉飯+桃園" target="_blank">桃源號魯肉飯</a></td><td>中正路藝文特區</td><td>10:30-20:30</td><td><span class="badge badge-green">魯肉飯/便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=甲等鵝肉+桃園" target="_blank">甲等鵝肉</a></td><td>南平路藝文特區</td><td>10:30-20:00</td><td><span class="badge badge-green">鵝肉專賣</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=潮星州海南雞+桃園" target="_blank">潮星州海南雞</a></td><td>莊敬路一段藝文特區</td><td>11:00-14:30、17:00-20:30</td><td><span class="badge badge-green">海南雞飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=小料理海米粉+桃園" target="_blank">小料理海米粉</a></td><td>同安街藝文特區</td><td>11:00-14:30、17:00-20:00</td><td><span class="badge badge-green">海鮮米粉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=貨運小吃+桃園" target="_blank">貨運小吃</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-20:30</td><td><span class="badge badge-orange">傳統小吃/熱炒</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=食鍋性也+桃園" target="_blank">食鍋性也</a></td><td>同德十一街藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-blue">個人鍋/鐵板</span></td></tr>
+</tbody>
+</table><!-- ==================== 東南亞料理 ==================== -->
+<table id="table-southeast-asian" data-cat="southeast-asian">
+<caption style="caption-side:top;text-align:left;font-weight:bold;font-size:1.1em;padding:6px 0;">🍜 東南亞料理（泰式、越式等）</caption>
+<thead><tr><th>店名</th><th>地址</th><th>營業時間</th><th>類型</th></tr></thead>
+<tbody>
+<tr><td><a href="https://maps.google.com/?q=泰集+桃園" target="_blank">泰集 桃園店</a></td><td>同德五街77號中茂新天地</td><td>11:30-14:00、17:30-21:30</td><td><span class="badge badge-red">泰式料理/合菜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=瓦城+桃園中正" target="_blank">瓦城泰統 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-red">泰式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=非常泰+桃園" target="_blank">非常泰 桃園店</a></td><td>藝文特區周邊</td><td>11:30-14:00、17:30-21:30</td><td><span class="badge badge-red">泰式創意料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=饗泰多+桃園" target="_blank">饗泰多 桃園中正店</a></td><td>中正路近同德二街</td><td>11:30-14:00、17:30-21:30</td><td><span class="badge badge-blue">泰式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=BOBOTHAI+桃園" target="_blank">BOBOTHAI 泰式料理</a></td><td>南平路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">泰式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=泰味館+桃園" target="_blank">泰味館 桃園店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-red">泰式料理吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=泰滾火鍋+桃園" target="_blank">泰滾火鍋 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">泰式火鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大象泰式燒烤+桃園" target="_blank">大象泰式燒烤</a></td><td>大興西路一段藝文特區</td><td>17:00-23:00</td><td><span class="badge badge-red">泰式燒烤/吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=武越+桃園" target="_blank">武越 越南料理</a></td><td>中正路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-green">越式河粉/小菜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=越之旅+桃園" target="_blank">越之旅 越南小吃</a></td><td>南平路同安國小旁</td><td>10:30-20:30<br><strong>週日公休</strong></td><td><span class="badge badge-green">越式平價小吃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=粄條兄+桃園" target="_blank">粄條兄 越南河粉</a></td><td>中正路藝文特區</td><td>10:00-20:00</td><td><span class="badge badge-green">越式河粉/粄條</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Gach Ngoi紅瓦+桃園" target="_blank">Gạch Ngói 紅瓦 越式餐酒館</a></td><td>中正路藝文特區</td><td>11:00-21:30</td><td><span class="badge badge-purple">越式餐酒館</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=金小蔥+桃園" target="_blank">金小蔥 越式料理</a></td><td>南平路藝文特區</td><td>11:00-14:30、17:00-21:30</td><td><span class="badge badge-green">越式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=七彩雲南+桃園中正" target="_blank">七彩雲南 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-21:00</td><td><span class="badge badge-blue">雲南料理/米干</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=忠貞誠米干+桃園" target="_blank">忠貞誠米干</a></td><td>中正路藝文特區</td><td>06:30-14:00</td><td><span class="badge badge-green">雲南米干</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿美米干+桃園" target="_blank">阿美米干 桃園店</a></td><td>中正路藝文特區</td><td>07:00-14:30</td><td><span class="badge badge-orange">雲南米干/破酥包</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大鬍子米干+桃園" target="_blank">大鬍子米干</a></td><td>南平路藝文特區</td><td>07:00-14:00</td><td><span class="badge badge-green">雲南米干</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=國旗屋米干+桃園" target="_blank">國旗屋米干</a></td><td>中壢區龍平路</td><td>06:00-14:00</td><td><span class="badge badge-orange">雲南米干名店</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=小雲滇+桃園" target="_blank">小雲滇 雲南小吃</a></td><td>南平路藝文特區</td><td>07:00-15:00</td><td><span class="badge badge-green">雲南米干/米線</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=泰鼎+桃園" target="_blank">泰鼎 泰式料理</a></td><td>大興西路一段藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">泰式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=湄河+桃園" target="_blank">湄河 泰式料理</a></td><td>經國路藝文特區</td><td>11:30-14:00、17:30-21:30</td><td><span class="badge badge-blue">泰式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=憶婷越南+桃園" target="_blank">憶婷越南小吃</a></td><td>同德六街藝文特區</td><td>09:00-20:00</td><td><span class="badge badge-green">越式小吃/河粉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=清香越南+桃園" target="_blank">清香越南小吃</a></td><td>同德十一街藝文特區</td><td>09:00-20:00</td><td><span class="badge badge-green">越式小吃/河粉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=芳姐越南+桃園" target="_blank">芳姐越南小吃</a></td><td>南平路藝文特區</td><td>09:30-20:30</td><td><span class="badge badge-green">越式小吃/河粉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=寶雅越南+桃園" target="_blank">寶雅越南小吃</a></td><td>中正路藝文特區</td><td>09:00-20:00</td><td><span class="badge badge-green">越式小吃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿貞越南+桃園" target="_blank">阿貞越南小吃</a></td><td>同安街藝文特區</td><td>09:00-19:30</td><td><span class="badge badge-green">越式河粉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=新樂園泰式+桃園" target="_blank">新樂園泰式燒烤</a></td><td>大興西路二段藝文特區</td><td>17:00-23:00</td><td><span class="badge badge-red">泰式燒烤</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=泰亞亞+桃園" target="_blank">泰亞亞 泰式料理</a></td><td>中正路藝文特區</td><td>11:00-14:30、17:00-21:00</td><td><span class="badge badge-green">平價泰式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=MU Curry暮+桃園" target="_blank">MU Curry暮 南洋咖哩</a></td><td>同德六街藝文特區</td><td>11:00-14:30、17:00-20:30</td><td><span class="badge badge-orange">南洋咖哩</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=峸老滷+桃園" target="_blank">峸老滷 泰式滷味</a></td><td>南平路藝文特區</td><td>11:00-14:00、17:00-21:00</td><td><span class="badge badge-orange">泰式滷味/小吃</span></td></tr>
+</tbody>
+</table><!-- ==================== 歐式料理 ==================== -->
+<table id="table-european" data-cat="european">
+<caption style="caption-side:top;text-align:left;font-weight:bold;font-size:1.1em;padding:6px 0;">🍝 歐式料理（義式、法式等）</caption>
+<thead><tr><th>店名</th><th>地址</th><th>營業時間</th><th>類型</th></tr></thead>
+<tbody>
+<tr><td><a href="https://maps.google.com/?q=托斯卡尼尼+桃園" target="_blank">托斯卡尼尼 義大利餐廳</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-red">義式料理/義大利麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=漫嚼MANGIA+桃園" target="_blank">漫嚼 MANGIA 義式餐廳</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-red">義式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Mita Pasta+桃園" target="_blank">Mita Pasta 米塔義式廚房</a></td><td>中正路近南平路</td><td>11:30-21:30</td><td><span class="badge badge-blue">義大利麵/燉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=帕朵拉+桃園" target="_blank">帕朵拉 義式餐廳</a></td><td>大興西路一段藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">義式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=La Casa+桃園" target="_blank">La Casa 義式餐酒館</a></td><td>南平路藝文特區</td><td>11:30-22:00</td><td><span class="badge badge-purple">義式餐酒館</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=尼尼義大利餐廳+桃園" target="_blank">尼尼義大利餐廳 桃園店</a></td><td>大興西路一段藝文特區</td><td>11:30-15:00、17:00-21:30</td><td><span class="badge badge-blue">義式料理/排餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=洋城義大利麵+桃園" target="_blank">洋城義大利麵 中正店</a></td><td>中正路藝文特區</td><td>11:30-21:30</td><td><span class="badge badge-green">平價義式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=古拉爵+桃園" target="_blank">古拉爵 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-22:00</td><td><span class="badge badge-green">義式/和風洋食</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=MeatUp覓晌+桃園" target="_blank">MeatUp 覓晌 義式餐酒</a></td><td>同德十一街藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-purple">義式餐酒館</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Sicilia Pizzeria+桃園" target="_blank">Sicilia Pizzeria 西西里披薩</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">義式披薩</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=薩莉亞+桃園" target="_blank">薩莉亞 Saizeriya 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-22:00</td><td><span class="badge badge-green">平價義式</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=薄多義+桃園" target="_blank">薄多義 義式餐廳 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">義式披薩/義大利麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=貝里尼+桃園" target="_blank">貝里尼 Bellini 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">義式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=洋朵+桃園" target="_blank">洋朵 義式廚房 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-21:30</td><td><span class="badge badge-green">平價義式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=NU Pasta+桃園" target="_blank">NU Pasta 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-green">平價義大利麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=小鐵鍋+桃園" target="_blank">小鐵鍋 Le Petit Fer</a></td><td>中正路藝文特區</td><td>11:30-21:30</td><td><span class="badge badge-blue">法式/歐式鐵鍋料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=PAUL+桃園" target="_blank">PAUL 法式麵包甜點 桃園中正店</a></td><td>中正路藝文特區</td><td>09:00-21:30</td><td><span class="badge badge-red">法式烘焙/輕食</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=長笛之家+桃園" target="_blank">長笛之家 La Flûte 法式餐廳</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-red">法式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Just Grill+桃園" target="_blank">Just Grill 牛排館</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-red">歐式牛排館</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Tasty+桃園中正\" target=\"_blank\">西堤牛排 TASTy 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class=\"badge badge-red\">歐式牛排/排餐</span></td></tr>
+<tr><td><a href=\"https://maps.google.com/?q=王品+桃園中正" target="_blank">王品牛排 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-red">歐式牛排/排餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=茹絲葵+桃園" target="_blank">茹絲葵經典牛排館 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-15:00、17:00-22:00</td><td><span class="badge badge-red">高級牛排館</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Texas Roadhouse+桃園" target="_blank">Texas Roadhouse 德州鮮切牛排</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-purple">美式牛排餐酒館</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=夏慕尼+桃園中正" target="_blank">夏慕尼 新香榭鐵板燒 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-red">法式鐵板燒</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=萊加享+桃園" target="_blank">萊加享 歐式料理</a></td><td>同德十街藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">歐式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Eat enjoy意享+桃園" target="_blank">Eat enjoy 意享 法式餐酒館</a></td><td>中正路藝文特區</td><td>11:30-21:30</td><td><span class="badge badge-purple">法式餐酒館</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=默倪+桃園" target="_blank">默倪 Morning 義式早午餐</a></td><td>同德十一街藝文特區</td><td>09:00-17:00<br><strong>週三公休</strong></td><td><span class="badge badge-green">義式早午餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=翻轉桌+桃園" target="_blank">翻轉桌 Flip Table 義式餐酒</a></td><td>藝文特區周邊</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-purple">義式餐酒館</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=波諾+桃園" target="_blank">波諾 義大利餐廳</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">義式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Mastro+桃園" target="_blank">Mastro 義式料理</a></td><td>南平路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">義式料理/排餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Gusto+桃園" target="_blank">Gusto 義式料理</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-green">平價義式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=諾薩比薩+桃園" target="_blank">諾薩比薩 Nossa Pizza</a></td><td>同德六街藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">手工義式披薩</span></td></tr>
+</tbody>
+</table><!-- ==================== 韓式料理 ==================== -->
+<table id="table-korean" data-cat="korean">
+<caption style="caption-side:top;text-align:left;font-weight:bold;font-size:1.1em;padding:6px 0;">🥘 韓式料理</caption>
+<thead><tr><th>店名</th><th>地址</th><th>營業時間</th><th>類型</th></tr></thead>
+<tbody>
+<tr><td><a href="https://maps.google.com/?q=涓豆腐+桃園中正" target="_blank">涓豆腐 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-red">韓式豆腐鍋/料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=兩班家+桃園" target="_blank">兩班家 韓式燒烤</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">韓式燒烤</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=韓姜熙+桃園" target="_blank">韓姜熙 韓式料理</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">韓式料理/定食</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=豆腐村+桃園" target="_blank">豆腐村 韓式豆腐鍋</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">韓式豆腐鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=朝鮮味+桃園" target="_blank">朝鮮味 韓式料理</a></td><td>南平路藝文特區</td><td>11:30-14:30、17:00-21:30</td><td><span class="badge badge-blue">韓式料理/小菜吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=韓舍+桃園" target="_blank">韓舍 韓式料理</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">韓式料理/烤肉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=娘子韓食+桃園" target="_blank">娘子韓食 韓式烤肉</a></td><td>中正路藝文特區</td><td>17:30-22:30</td><td><span class="badge badge-purple">韓式烤肉/餐酒</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=石二鍋+桃園中正" target="_blank">石二鍋 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-21:30</td><td><span class="badge badge-green">平價韓式石鍋/火鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Omaya春川炒雞+桃園" target="_blank">Omaya 春川炒雞 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:00-21:30</td><td><span class="badge badge-orange">韓式春川炒雞</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=徐升家的+桃園" target="_blank">徐升家的 韓式烤肉</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-blue">韓式烤肉專門</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=新麻蒲海鷗+桃園" target="_blank">新麻蒲海鷗 韓式烤肉</a></td><td>大興西路一段藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">韓式烤肉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=SAN MA吐司+桃園" target="_blank">SAN MA吐司 韓式吐司</a></td><td>南平路藝文特區</td><td>07:00-14:00</td><td><span class="badge badge-green">韓式吐司/早午餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=盆子+桃園" target="_blank">盆子 韓式料理</a></td><td>中正路藝文特區</td><td>11:00-14:30、17:00-21:00</td><td><span class="badge badge-green">平價韓式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=韓巧+桃園" target="_blank">韓巧 韓式料理</a></td><td>同德十一街藝文特區</td><td>11:00-14:30、17:00-21:00</td><td><span class="badge badge-green">平價韓式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大韓味+桃園" target="_blank">大韓味 韓式料理</a></td><td>同德六街藝文特區</td><td>11:30-14:30、17:00-21:30</td><td><span class="badge badge-green">平價韓式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=韓金饌+桃園" target="_blank">韓金饌 韓式料理</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:00-21:30</td><td><span class="badge badge-blue">韓式料理/銅盤烤肉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=東大門+桃園" target="_blank">東大門 韓式燒烤</a></td><td>大興西路一段藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">韓式燒烤/吃到飽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=八色烤肉+桃園" target="_blank">八色烤肉 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">韓式八色烤肉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=明洞韓食+桃園" target="_blank">明洞韓食</a></td><td>同德十一街藝文特區</td><td>11:30-14:30、17:00-21:30</td><td><span class="badge badge-green">平價韓式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=首爾韓食+桃園" target="_blank">首爾韓食</a></td><td>南平路藝文特區</td><td>11:30-14:30、17:00-21:30</td><td><span class="badge badge-green">平價韓式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=釜山韓食+桃園" target="_blank">釜山韓食</a></td><td>中正路藝文特區</td><td>11:00-14:30、17:00-21:00</td><td><span class="badge badge-green">平價韓式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=梨泰院+桃園" target="_blank">梨泰院 韓式料理</a></td><td>南平路藝文特區</td><td>11:30-14:30、17:00-21:30</td><td><span class="badge badge-blue">韓式料理/辣炒年糕</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=韓國館+桃園" target="_blank">韓國館 韓式料理</a></td><td>南平路藝文特區</td><td>11:30-14:30、17:00-21:30</td><td><span class="badge badge-blue">韓式料理/韓國烤肉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=韓牛村+桃園" target="_blank">韓牛村 韓式燒肉</a></td><td>大興西路一段藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">韓式燒肉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=首爾大叔+桃園" target="_blank">首爾大叔 韓式料理</a></td><td>同安街藝文特區</td><td>11:30-14:30、17:00-21:00</td><td><span class="badge badge-green">平價韓式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=韓式飯捲天國+桃園" target="_blank">韓式飯捲天國</a></td><td>中正路藝文特區</td><td>10:00-20:00</td><td><span class="badge badge-green">韓式飯捲/紫菜包飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=海苔飯捲家+桃園" target="_blank">海苔飯捲家</a></td><td>南平路藝文特區</td><td>10:00-20:00</td><td><span class="badge badge-green">韓式飯捲</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=辣炒雞排+桃園" target="_blank">辣炒雞排 韓式料理</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:00-21:30</td><td><span class="badge badge-orange">韓式辣炒雞排</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=韓國炸雞+桃園中正" target="_blank">韓國炸雞 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-21:30</td><td><span class="badge badge-orange">韓式炸雞</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=起家雞+桃園" target="_blank">起家雞 韓式炸雞 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:30</td><td><span class="badge badge-red">韓式炸雞專門</span></td></tr>
+</tbody>
+</table><!-- ==================== 美式料理 ==================== -->
+<table id="table-american" data-cat="american">
+<caption style="caption-side:top;text-align:left;font-weight:bold;font-size:1.1em;padding:6px 0;">🍔 美式料理</caption>
+<thead><tr><th>店名</th><th>地址</th><th>營業時間</th><th>類型</th></tr></thead>
+<tbody>
+<tr><td><a href="https://maps.google.com/?q=茹絲葵+桃園" target="_blank">茹絲葵經典牛排館 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-15:00、17:00-22:00</td><td><span class="badge badge-red">高級牛排館</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Texas Roadhouse+桃園" target="_blank">Texas Roadhouse 德州鮮切牛排</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-purple">美式牛排餐酒館</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=FRiDAY'S+桃園" target="_blank">FRiDAY'S 星期五餐廳 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-22:00</td><td><span class="badge badge-red">美式餐廳/豬肋排</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=TGI FRiDAY'S+桃園" target="_blank">TGI FRIDAYS 桃園店</a></td><td>中正路藝文特區</td><td>11:30-22:00</td><td><span class="badge badge-red">美式餐廳/酒吧</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Chili's+桃園" target="_blank">Chili's 美式餐廳 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-22:00</td><td><span class="badge badge-blue">美式餐廳</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Burger King+桃園中正" target="_blank">Burger King 漢堡王 桃園中正店</a></td><td>中正路藝文特區</td><td>07:00-22:00</td><td><span class="badge badge-green">美式速食/漢堡</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=McDonald's+桃園中正" target="_blank">McDonald's 麥當勞 桃園中正店</a></td><td>中正路藝文特區</td><td>24小時營業</td><td><span class="badge badge-green">美式速食</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=KFC+桃園中正" target="_blank">KFC 肯德基 桃園中正店</a></td><td>中正路藝文特區</td><td>07:00-23:00</td><td><span class="badge badge-green">美式速食/炸雞</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Subway+桃園中正" target="_blank">Subway 桃園中正店</a></td><td>中正路藝文特區</td><td>08:00-22:00</td><td><span class="badge badge-green">美式潛艇堡/輕食</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=摩斯漢堡+桃園中正" target="_blank">摩斯漢堡 桃園中正店</a></td><td>中正路藝文特區</td><td>06:00-23:00</td><td><span class="badge badge-green">日式/美式漢堡</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=樂子+桃園" target="_blank">樂子 the Diner 美式餐廳</a></td><td>中正路藝文特區</td><td>08:00-21:30</td><td><span class="badge badge-blue">美式早午餐/漢堡</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=貳樓+桃園" target="_blank">貳樓 Second Floor 桃園中正店</a></td><td>中正路藝文特區</td><td>08:00-22:00</td><td><span class="badge badge-blue">美式早午餐/漢堡</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=麥味登+桃園中正" target="_blank">麥味登 桃園中正店</a></td><td>中正路藝文特區</td><td>06:00-14:00</td><td><span class="badge badge-green">美式/台式早午餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=吐司逗點+桃園" target="_blank">吐司逗點 美式早午餐</a></td><td>同安街藝文特區</td><td>07:00-14:30<br><strong>週一公休</strong></td><td><span class="badge badge-green">美式早午餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=翻轉吧+桃園" target="_blank">翻轉吧 美式早午餐</a></td><td>同德六街藝文特區</td><td>07:30-15:00<br><strong>週二公休</strong></td><td><span class="badge badge-green">美式早午餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=早安美芝城+桃園中正" target="_blank">早安美芝城 桃園中正店</a></td><td>中正路藝文特區</td><td>06:00-12:30</td><td><span class="badge badge-green">美式/台式早午餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=拉亞漢堡+桃園中正" target="_blank">拉亞漢堡 桃園中正店</a></td><td>中正路藝文特區</td><td>05:30-14:00</td><td><span class="badge badge-green">美式/台式早午餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Q Burger+桃園中正" target="_blank">Q Burger 桃園中正店</a></td><td>中正路藝文特區</td><td>06:00-14:00</td><td><span class="badge badge-green">美式早午餐/漢堡</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=元素漢堡+桃園" target="_blank">元素漢堡 Element Burger</a></td><td>同德十一街藝文特區</td><td>11:30-14:30、17:00-21:00</td><td><span class="badge badge-green">手作美式漢堡</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Burger Ray+桃園" target="_blank">Burger Ray 漢堡 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">美式漢堡專賣</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Bravo Burger+桃園" target="_blank">Bravo Burger 美式漢堡</a></td><td>南平路藝文特區</td><td>11:30-14:30、17:30-21:00</td><td><span class="badge badge-orange">美式漢堡/薯條</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=好食多+桃園" target="_blank">好食多 美式餐廳</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">美式料理/大份量</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Outback+桃園中正" target="_blank">Outback 澳美客牛排館 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-14:30、17:30-22:00</td><td><span class="badge badge-red">美式牛排/澳式料理</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Texas BBQ+桃園" target="_blank">Texas BBQ 德州烤肉</a></td><td>大興西路一段藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-red">美式烤肉/手撕豬</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=Smokey Joe's+桃園" target="_blank">Smokey Joe's 美式餐廳</a></td><td>中正路藝文特區</td><td>11:00-22:00</td><td><span class="badge badge-blue">美式休閒餐飲</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=雙聖+桃園" target="_blank">雙聖 Swensen's 美式餐廳</a></td><td>中正路藝文特區</td><td>11:30-21:30</td><td><span class="badge badge-blue">美式家庭餐廳</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=金色三麥+桃園中正" target="_blank">金色三麥 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-23:00</td><td><span class="badge badge-purple">美式/德式餐酒館</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=牛排大叔+桃園" target="_blank">牛排大叔 美式牛排</a></td><td>南平路藝文特區</td><td>11:30-14:30、17:30-21:30</td><td><span class="badge badge-blue">美式牛排</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=孫東寶+桃園中正" target="_blank">孫東寶 牛排 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-green">平價牛排</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=貴族世家+桃園中正" target="_blank">貴族世家 牛排 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:30</td><td><span class="badge badge-green">平價牛排/沙拉吧</span></td></tr>
+</tbody>
+</table><!-- ==================== 街頭小吃 ==================== -->
+<table id="table-street-food" data-cat="street-food">
+<caption style="caption-side:top;text-align:left;font-weight:bold;font-size:1.1em;padding:6px 0;">🥟 街頭小吃</caption>
+<thead><tr><th>店名</th><th>地址</th><th>營業時間</th><th>類型</th></tr></thead>
+<tbody><tr><td><a href="https://maps.google.com/?q=永和豆漿+桃園中正" target="_blank">永和豆漿 中正店</a></td><td>中正路藝文特區</td><td>24小時營業</td><td><span class="badge badge-green">中式早餐/燒餅油條</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=四海豆漿+桃園南平" target="_blank">四海豆漿 南平店</a></td><td>南平路藝文特區</td><td>05:00-11:00</td><td><span class="badge badge-green">中式早餐/豆漿</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=來來豆漿+桃園" target="_blank">來來豆漿 桃園中正店</a></td><td>中正路藝文特區</td><td>24小時營業</td><td><span class="badge badge-green">中式早餐/燒餅油條</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=桃源號+桃園" target="_blank">桃源號 傳統小吃</a></td><td>中正路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-green">傳統小吃/滷肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鬍鬚張+桃園中正" target="_blank">鬍鬚張 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-22:00</td><td><span class="badge badge-green">滷肉飯/便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=金鋒滷肉飯+桃園" target="_blank">金鋒滷肉飯 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-green">滷肉飯專門</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=胡家滷肉飯+桃園" target="_blank">胡家滷肉飯</a></td><td>南平路藝文特區</td><td>11:00-20:00</td><td><span class="badge badge-green">滷肉飯/小菜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=老擔滷肉飯+桃園" target="_blank">老擔滷肉飯</a></td><td>同德十一街藝文特區</td><td>11:00-20:30</td><td><span class="badge badge-green">滷肉飯/便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=府城擔仔麵+桃園" target="_blank">府城擔仔麵 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-green">擔仔麵/台南小吃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=度小月+桃園" target="_blank">度小月 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-blue">擔仔麵/台南名產</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=周記肉粥+桃園" target="_blank">周記肉粥</a></td><td>南平路藝文特區</td><td>06:00-14:00</td><td><span class="badge badge-green">鹹粥/肉粥</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=永和豆漿大王+桃園" target="_blank">永和豆漿大王 桃園南平店</a></td><td>南平路藝文特區</td><td>05:00-12:00</td><td><span class="badge badge-green">中式早餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿婆麵線+桃園" target="_blank">阿婆麵線</a></td><td>同德六街藝文特區</td><td>06:30-14:00</td><td><span class="badge badge-green">大腸麵線</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=麵線王+桃園" target="_blank">麵線王 桃園中正店</a></td><td>中正路藝文特區</td><td>07:00-19:00</td><td><span class="badge badge-green">大腸/蚵仔麵線</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿宗麵線+桃園" target="_blank">阿宗麵線 桃園中正店</a></td><td>中正路藝文特區</td><td>10:00-20:00</td><td><span class="badge badge-green">大腸麵線</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=麵線傳奇+桃園" target="_blank">麵線傳奇</a></td><td>南平路藝文特區</td><td>07:00-18:00</td><td><span class="badge badge-green">大腸麵線/肉羹</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=肉圓王+桃園" target="_blank">肉圓王</a></td><td>中正路藝文特區</td><td>10:30-20:00</td><td><span class="badge badge-green">肉圓/四神湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=彰化肉圓+桃園" target="_blank">彰化肉圓 桃園中正店</a></td><td>中正路藝文特區</td><td>10:30-20:30</td><td><span class="badge badge-green">彰化肉圓</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=北斗肉圓+桃園" target="_blank">北斗肉圓</a></td><td>南平路藝文特區</td><td>10:30-20:00</td><td><span class="badge badge-green">北斗肉圓</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿給+桃園" target="_blank">阿給 桃園中正店</a></td><td>中正路藝文特區</td><td>10:00-20:00</td><td><span class="badge badge-green">淡水阿給/魚丸湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=蚵仔煎大王+桃園" target="_blank">蚵仔煎大王</a></td><td>南平路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">蚵仔煎/台式小吃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=圓環蚵仔煎+桃園" target="_blank">圓環蚵仔煎</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">蚵仔煎/貢丸湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=士林大香腸+桃園" target="_blank">士林大香腸 桃園中正店</a></td><td>中正路藝文特區</td><td>14:00-22:00</td><td><span class="badge badge-green">大腸包小腸/香腸</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大腸包小腸+桃園中正" target="_blank">大腸包小腸 中正店</a></td><td>中正路藝文特區</td><td>15:00-22:00</td><td><span class="badge badge-green">大腸包小腸</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鹹酥雞大王+桃園" target="_blank">鹹酥雞大王 桃園中正店</a></td><td>中正路藝文特區</td><td>15:00-00:00</td><td><span class="badge badge-green">鹹酥雞/炸物</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=繼光香香雞+桃園中正" target="_blank">繼光香香雞 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-22:00</td><td><span class="badge badge-green">香香雞/炸雞</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=胖老爹+桃園中正" target="_blank">胖老爹 美式炸雞 桃園中正店</a></td><td>中正路藝文特區</td><td>11:30-21:30</td><td><span class="badge badge-green">美式炸雞</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=頂呱呱+桃園中正" target="_blank">頂呱呱 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:30</td><td><span class="badge badge-green">台式炸雞/呱呱包</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=雞排大亨+桃園" target="_blank">雞排大亨</a></td><td>同德十一街藝文特區</td><td>15:00-23:00</td><td><span class="badge badge-green">雞排/炸物</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=派克雞排+桃園中正" target="_blank">派克雞排 桃園中正店</a></td><td>中正路藝文特區</td><td>15:00-23:00</td><td><span class="badge badge-green">脆皮雞排/炸物</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=惡魔雞排+桃園" target="_blank">惡魔雞排 桃園中正店</a></td><td>中正路藝文特區</td><td>15:00-22:30</td><td><span class="badge badge-green">雞排/炸物</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=蔥油餅大王+桃園" target="_blank">蔥油餅大王</a></td><td>南平路藝文特區</td><td>14:00-22:00</td><td><span class="badge badge-green">蔥油餅/抓餅</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=韭菜盒子+桃園南平" target="_blank">韭菜盒子 南平店</a></td><td>南平路藝文特區</td><td>14:00-19:00</td><td><span class="badge badge-green">韭菜盒子/煎餅</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=紅豆餅大王+桃園" target="_blank">紅豆餅大王</a></td><td>中正路藝文特區</td><td>13:00-19:00</td><td><span class="badge badge-green">紅豆餅/奶油餅</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=車輪餅+桃園中正" target="_blank">車輪餅 中正店</a></td><td>中正路藝文特區</td><td>13:00-19:00</td><td><span class="badge badge-green">車輪餅/紅豆餅</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=地瓜球+桃園南平" target="_blank">地瓜球 南平店</a></td><td>南平路藝文特區</td><td>14:00-21:00</td><td><span class="badge badge-green">地瓜球/QQ球</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=章魚燒+桃園中正" target="_blank">章魚燒 中正店</a></td><td>中正路藝文特區</td><td>15:00-22:00</td><td><span class="badge badge-green">章魚燒/日式小吃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=日船章魚燒+桃園" target="_blank">日船章魚燒 桃園中正店</a></td><td>中正路藝文特區</td><td>15:00-22:30</td><td><span class="badge badge-green">章魚燒</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=滷味王+桃園中正" target="_blank">滷味王 中正店</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">加熱滷味</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=滷味世家+桃園" target="_blank">滷味世家</a></td><td>南平路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">加熱滷味/麻辣燙</span></td></tr><tr><td><a href="https://maps.google.com/?q=燈籠滷味+桃園中正" target="_blank">燈籠滷味 桃園中正店</a></td><td>中正路藝文特區</td><td>16:00-23:30</td><td><span class="badge badge-green">加熱滷味</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=麻辣燙+桃園中正" target="_blank">麻辣燙 中正店</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">麻辣燙/滷味</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=黑輪大王+桃園" target="_blank">黑輪大王</a></td><td>同德六街藝文特區</td><td>15:00-22:00</td><td><span class="badge badge-green">黑輪/關東煮</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=炒麵麵包+桃園中正" target="_blank">炒麵麵包 中正店</a></td><td>中正路藝文特區</td><td>15:00-21:00</td><td><span class="badge badge-green">炒麵麵包/日式小吃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=烤玉米大王+桃園" target="_blank">烤玉米大王</a></td><td>南平路藝文特區</td><td>15:00-22:00</td><td><span class="badge badge-green">烤玉米/醬烤</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=古早味烤玉米+桃園" target="_blank">古早味烤玉米 桃園中正店</a></td><td>中正路藝文特區</td><td>14:00-22:00</td><td><span class="badge badge-green">烤玉米</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=烤番麥+桃園南平" target="_blank">烤番麥 南平店</a></td><td>南平路藝文特區</td><td>14:00-22:00</td><td><span class="badge badge-green">烤玉米</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=麻油雞大王+桃園" target="_blank">麻油雞大王</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">麻油雞/當歸鴨</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=當歸鴨麵線+桃園中正" target="_blank">當歸鴨麵線 中正店</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">當歸鴨/麵線</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=藥燉排骨+桃園中正" target="_blank">藥燉排骨 中正店</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">藥燉排骨/麻油雞</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=羊肉爐+桃園中正" target="_blank">羊肉爐 中正店</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-orange">羊肉爐/藥膳</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=薑母鴨+桃園中正" target="_blank">薑母鴨 中正店</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-orange">薑母鴨/暖鍋</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鍋貼大王+桃園" target="_blank">鍋貼大王</a></td><td>南平路藝文特區</td><td>10:00-21:00</td><td><span class="badge badge-green">鍋貼/水餃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=八方雲集+桃園中正" target="_blank">八方雲集 桃園中正店</a></td><td>中正路藝文特區</td><td>10:00-21:30</td><td><span class="badge badge-green">鍋貼/水餃/酸辣湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=四海遊龍+桃園中正" target="_blank">四海遊龍 桃園中正店</a></td><td>中正路藝文特區</td><td>10:00-21:30</td><td><span class="badge badge-green">鍋貼/水餃/酸辣湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=天津蔥抓餅+桃園" target="_blank">天津蔥抓餅 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-green">蔥抓餅/蛋餅</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=水煎包大王+桃園" target="_blank">水煎包大王</a></td><td>南平路藝文特區</td><td>06:00-12:00</td><td><span class="badge badge-green">水煎包/高麗菜包</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=上海水煎包+桃園中正" target="_blank">上海水煎包 中正店</a></td><td>中正路藝文特區</td><td>06:00-12:00</td><td><span class="badge badge-green">水煎包</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=小籠包大王+桃園" target="_blank">小籠包大王</a></td><td>同德十一街藝文特區</td><td>06:00-13:00</td><td><span class="badge badge-green">小籠包/蒸餃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鼎泰豐+桃園中正" target="_blank">鼎泰豐 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:30</td><td><span class="badge badge-red">小籠包/麵食</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=點心世界+桃園中正" target="_blank">點心世界 中正店</a></td><td>中正路藝文特區</td><td>10:00-21:00</td><td><span class="badge badge-green">小籠包/餛飩/麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=台南碗粿+桃園中正" target="_blank">台南碗粿 中正店</a></td><td>中正路藝文特區</td><td>11:00-20:00</td><td><span class="badge badge-green">碗粿/米糕</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=米糕大王+桃園" target="_blank">米糕大王</a></td><td>南平路藝文特區</td><td>11:00-20:00</td><td><span class="badge badge-green">筒仔米糕/肉羹</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=台南棺材板+桃園" target="_blank">台南棺材板 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-green">棺材板/台南小吃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大腸麵線+桃園中正" target="_blank">大腸麵線 中正店</a></td><td>中正路藝文特區</td><td>07:00-18:00</td><td><span class="badge badge-green">大腸麵線</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=嘉義雞肉飯+桃園中正" target="_blank">嘉義雞肉飯 桃園中正店</a></td><td>中正路藝文特區</td><td>10:30-20:30</td><td><span class="badge badge-green">雞肉飯/便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=火雞肉飯+桃園南平" target="_blank">火雞肉飯 南平店</a></td><td>南平路藝文特區</td><td>10:30-20:00</td><td><span class="badge badge-green">火雞肉飯/小菜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=雞肉飯大王+桃園" target="_blank">雞肉飯大王</a></td><td>同德六街藝文特區</td><td>10:30-20:00</td><td><span class="badge badge-green">雞肉飯/便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=控肉飯大王+桃園" target="_blank">控肉飯大王</a></td><td>中正路藝文特區</td><td>10:30-20:00</td><td><span class="badge badge-green">控肉飯/豬腳飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=豬腳飯+桃園中正" target="_blank">豬腳飯 中正店</a></td><td>中正路藝文特區</td><td>10:30-20:30</td><td><span class="badge badge-green">豬腳飯/滷肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=排骨酥湯+桃園" target="_blank">排骨酥湯 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-green">排骨酥/米粉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=排骨酥大王+桃園" target="_blank">排骨酥大王</a></td><td>南平路藝文特區</td><td>11:00-20:00</td><td><span class="badge badge-green">排骨酥/油飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=筒仔米糕+桃園南平" target="_blank">筒仔米糕 南平店</a></td><td>南平路藝文特區</td><td>11:00-20:00</td><td><span class="badge badge-green">筒仔米糕/貢丸湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=臭豆腐大王+桃園" target="_blank">臭豆腐大王</a></td><td>中正路藝文特區</td><td>15:00-22:00</td><td><span class="badge badge-green">臭豆腐/泡菜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=深坑臭豆腐+桃園中正" target="_blank">深坑臭豆腐 中正店</a></td><td>中正路藝文特區</td><td>15:00-22:00</td><td><span class="badge badge-green">臭豆腐/麻辣臭豆腐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=麻辣臭豆腐+桃園中正" target="_blank">麻辣臭豆腐 中正店</a></td><td>中正路藝文特區</td><td>15:00-22:30</td><td><span class="badge badge-green">麻辣臭豆腐/鴨血</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鹽水雞+桃園中正" target="_blank">鹽水雞 中正店</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">鹽水雞/雞肉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=東山鴨頭+桃園中正" target="_blank">東山鴨頭 中正店</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">東山鴨頭/滷炸</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=烤鴨夾餅+桃園中正" target="_blank">烤鴨夾餅 中正店</a></td><td>中正路藝文特區</td><td>11:00-20:00</td><td><span class="badge badge-green">烤鴨夾餅/北京烤鴨</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=北京烤鴨+桃園中正" target="_blank">北京烤鴨 中正店</a></td><td>中正路藝文特區</td><td>10:30-20:00</td><td><span class="badge badge-green">烤鴨/餅皮</span></td></tr><tr><td><a href="https://maps.google.com/?q=台式烤玉米+桃園中正" target="_blank">台式烤玉米 中正店</a></td><td>中正路藝文特區</td><td>14:00-22:00</td><td><span class="badge badge-green">烤玉米</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=石頭玉米+桃園" target="_blank">石頭玉米 桃園中正店</a></td><td>中正路藝文特區</td><td>14:00-22:00</td><td><span class="badge badge-green">石頭烤玉米</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=燒番麥+桃園中正" target="_blank">燒番麥 中正店</a></td><td>中正路藝文特區</td><td>14:00-22:00</td><td><span class="badge badge-green">烤玉米</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=蔥油餅+桃園南平" target="_blank">蔥油餅 南平店</a></td><td>南平路藝文特區</td><td>14:00-22:00</td><td><span class="badge badge-green">蔥油餅/抓餅</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=餡餅大王+桃園" target="_blank">餡餅大王</a></td><td>中正路藝文特區</td><td>14:00-21:00</td><td><span class="badge badge-green">豬肉/牛肉餡餅</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=胡椒餅+桃園中正" target="_blank">胡椒餅 中正店</a></td><td>中正路藝文特區</td><td>14:00-20:00</td><td><span class="badge badge-green">胡椒餅/烤餅</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=福州胡椒餅+桃園" target="_blank">福州胡椒餅 桃園中正店</a></td><td>中正路藝文特區</td><td>14:00-20:00</td><td><span class="badge badge-green">福州胡椒餅</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=碳烤雞排+桃園中正" target="_blank">碳烤雞排 中正店</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">碳烤雞排/炸物</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=烤肉串+桃園中正" target="_blank">烤肉串 中正店</a></td><td>中正路藝文特區</td><td>17:00-23:00</td><td><span class="badge badge-green">烤肉串/碳烤</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=串燒王+桃園" target="_blank">串燒王 桃園中正店</a></td><td>中正路藝文特區</td><td>17:00-23:30</td><td><span class="badge badge-green">串燒/烤肉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=烤魷魚+桃園中正" target="_blank">烤魷魚 中正店</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">烤魷魚/海鮮</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=烤香腸+桃園中正" target="_blank">烤香腸 中正店</a></td><td>中正路藝文特區</td><td>15:00-22:00</td><td><span class="badge badge-green">烤香腸/大腸包小腸</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=黑輪攤+桃園中正" target="_blank">黑輪攤 中正店</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">黑輪/甜不辣</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=甜不辣大王+桃園" target="_blank">甜不辣大王</a></td><td>南平路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-green">甜不辣/關東煮</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=肉羹大王+桃園" target="_blank">肉羹大王</a></td><td>中正路藝文特區</td><td>10:30-20:00</td><td><span class="badge badge-green">肉羹/魷魚羹</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=魷魚羹+桃園中正" target="_blank">魷魚羹 中正店</a></td><td>中正路藝文特區</td><td>10:30-20:30</td><td><span class="badge badge-green">魷魚羹/羊肉羹</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=羊肉羹+桃園南平" target="_blank">羊肉羹 南平店</a></td><td>南平路藝文特區</td><td>10:30-20:30</td><td><span class="badge badge-green">羊肉羹/排骨羹</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=魷魚羹麵+桃園中正" target="_blank">魷魚羹麵 中正店</a></td><td>中正路藝文特區</td><td>10:30-20:30</td><td><span class="badge badge-green">魷魚羹/米粉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=肉羹麵+桃園南平" target="_blank">肉羹麵 南平店</a></td><td>南平路藝文特區</td><td>10:30-20:30</td><td><span class="badge badge-green">肉羹麵/麵線</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=蚵嗲大王+桃園" target="_blank">蚵嗲大王</a></td><td>南平路藝文特區</td><td>14:00-21:00</td><td><span class="badge badge-green">蚵嗲/炸物</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=蚵仔麵線+桃園中正" target="_blank">蚵仔麵線 中正店</a></td><td>中正路藝文特區</td><td>07:00-18:00</td><td><span class="badge badge-green">蚵仔麵線</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=清蒸肉圓+桃園中正" target="_blank">清蒸肉圓 中正店</a></td><td>中正路藝文特區</td><td>10:30-20:30</td><td><span class="badge badge-green">清蒸肉圓/四神湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=炸肉圓+桃園南平" target="_blank">炸肉圓 南平店</a></td><td>南平路藝文特區</td><td>11:00-20:00</td><td><span class="badge badge-green">炸肉圓/貢丸湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=台南肉圓+桃園" target="_blank">台南肉圓 桃園中正店</a></td><td>中正路藝文特區</td><td>10:30-20:00</td><td><span class="badge badge-green">台南肉圓</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=碗粿大王+桃園" target="_blank">碗粿大王</a></td><td>南平路藝文特區</td><td>11:00-20:00</td><td><span class="badge badge-green">碗粿/米糕</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=筒仔米糕大王+桃園" target="_blank">筒仔米糕大王</a></td><td>中正路藝文特區</td><td>11:00-20:00</td><td><span class="badge badge-green">筒仔米糕/貢丸湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=滷肉飯大王+桃園" target="_blank">滷肉飯大王</a></td><td>同德六街藝文特區</td><td>10:30-20:00</td><td><span class="badge badge-green">滷肉飯/便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=米粉湯+桃園中正" target="_blank">米粉湯 中正店</a></td><td>中正路藝文特區</td><td>07:00-14:00</td><td><span class="badge badge-green">米粉湯/黑白切</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=切仔麵+桃園中正" target="_blank">切仔麵 中正店</a></td><td>中正路藝文特區</td><td>10:30-21:00</td><td><span class="badge badge-green">切仔麵/陽春麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=陽春麵+桃園南平" target="_blank">陽春麵 南平店</a></td><td>南平路藝文特區</td><td>10:30-20:30</td><td><span class="badge badge-green">陽春麵/餛飩麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=意麵王+桃園" target="_blank">意麵王 桃園中正店</a></td><td>中正路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-green">台南意麵/滷味</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=擔仔麵+桃園南平" target="_blank">擔仔麵 南平店</a></td><td>南平路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-green">擔仔麵/滷肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=油飯大王+桃園" target="_blank">油飯大王</a></td><td>中正路藝文特區</td><td>06:00-13:00</td><td><span class="badge badge-green">油飯/肉羹</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=粽子大王+桃園" target="_blank">粽子大王</a></td><td>南平路藝文特區</td><td>06:00-13:00</td><td><span class="badge badge-green">肉粽/粿粽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=菜粽大王+桃園" target="_blank">菜粽大王</a></td><td>中正路藝文特區</td><td>06:00-13:00</td><td><span class="badge badge-green">菜粽/花生粽</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=潤餅+桃園中正" target="_blank">潤餅 中正店</a></td><td>中正路藝文特區</td><td>10:00-18:00</td><td><span class="badge badge-green">潤餅/春捲</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=春捲大王+桃園" target="_blank">春捲大王 桃園中正店</a></td><td>中正路藝文特區</td><td>10:00-19:00</td><td><span class="badge badge-green">春捲/潤餅</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=割包+桃園中正" target="_blank">割包 中正店</a></td><td>中正路藝文特區</td><td>11:00-20:00</td><td><span class="badge badge-green">割包/控肉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=四神湯+桃園中正" target="_blank">四神湯 中正店</a></td><td>中正路藝文特區</td><td>16:00-23:00</td><td><span class="badge badge-green">四神湯/小腸</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=豬血湯+桃園中正" target="_blank">豬血湯 中正店</a></td><td>中正路藝文特區</td><td>10:30-20:00</td><td><span class="badge badge-green">豬血湯/大腸</span></td></tr><tr><td><a href="https://maps.google.com/?q=豬血糕+桃園中正" target="_blank">豬血糕 中正店</a></td><td>中正路藝文特區</td><td>14:00-22:00</td><td><span class="badge badge-green">豬血糕/花生粉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=雞蛋糕+桃園中正" target="_blank">雞蛋糕 中正店</a></td><td>中正路藝文特區</td><td>14:00-20:00</td><td><span class="badge badge-green">雞蛋糕/造型蛋糕</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鯛魚燒+桃園中正" target="_blank">鯛魚燒 中正店</a></td><td>中正路藝文特區</td><td>14:00-20:00</td><td><span class="badge badge-green">鯛魚燒/紅豆餅</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=可麗餅+桃園中正" target="_blank">可麗餅 中正店</a></td><td>中正路藝文特區</td><td>14:00-21:00</td><td><span class="badge badge-green">可麗餅/甜點</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=豆花大王+桃園中正" target="_blank">豆花大王 中正店</a></td><td>中正路藝文特區</td><td>12:00-22:00</td><td><span class="badge badge-green">傳統豆花/刨冰</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=仙草凍+桃園中正" target="_blank">仙草凍 中正店</a></td><td>中正路藝文特區</td><td>12:00-21:00</td><td><span class="badge badge-green">仙草凍/嫩仙草</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=愛玉冰+桃園中正" target="_blank">愛玉冰 中正店</a></td><td>中正路藝文特區</td><td>12:00-21:00</td><td><span class="badge badge-green">檸檬愛玉/傳統冰品</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=芒果冰+桃園中正" target="_blank">芒果冰 中正店</a></td><td>中正路藝文特區</td><td>12:00-22:00</td><td><span class="badge badge-green">芒果冰/雪花冰</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=刨冰大王+桃園中正" target="_blank">刨冰大王 中正店</a></td><td>中正路藝文特區</td><td>12:00-22:00</td><td><span class="badge badge-green">刨冰/八寶冰</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=泡泡冰+桃園中正" target="_blank">泡泡冰 中正店</a></td><td>中正路藝文特區</td><td>12:00-21:00</td><td><span class="badge badge-green">泡泡冰/綿綿冰</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿美手打排骨藝文店+桃園" target="_blank">阿美手打排骨 藝文店</a></td><td>同德十一街139號</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">排骨飯/雞腿飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=巧米雞腿大王桃鶯店+桃園" target="_blank">巧米雞腿大王 桃鶯店</a></td><td>桃鶯路188號</td><td>10:30-20:00</td><td><span class="badge badge-green">雞腿飯/排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=正一排骨+桃園" target="_blank">正一排骨 中正總店</a></td><td>中正路730號</td><td>10:30-14:00、16:30-20:00</td><td><span class="badge badge-green">排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=亞士多雞腿排骨+桃園" target="_blank">亞士多雞腿排骨</a></td><td>中正路450號</td><td>11:00-14:30、16:00-19:00</td><td><span class="badge badge-green">雞腿飯/排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=馮羽樓烏雞飯藝文店+桃園" target="_blank">馮羽樓烏雞飯 藝文店</a></td><td>南平路254巷1號</td><td>11:30-14:30、16:30-19:30</td><td><span class="badge badge-green">雞腿飯/烏雞飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大有便當桃園三元街+桃園" target="_blank">大有便當 三元店</a></td><td>三元街175號</td><td>10:00-13:00</td><td><span class="badge badge-green">雞腿飯/滷排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大有便當大有店+桃園" target="_blank">大有便當 大有店</a></td><td>大有路28號</td><td>10:30-13:00</td><td><span class="badge badge-green">雞腿飯/排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=珍珍排骨+桃園" target="_blank">珍珍排骨</a></td><td>中山路402號</td><td>11:00-20:00</td><td><span class="badge badge-green">排骨飯/雞腿飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=翔美雞腿飯+桃園" target="_blank">翔美雞腿飯</a></td><td>縣府路248號</td><td>08:00-13:00、16:30-19:00</td><td><span class="badge badge-green">雞腿飯/排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=佳珍盒餐排骨便當+桃園" target="_blank">佳珍盒餐 排骨便當</a></td><td>民權路153號</td><td>10:30-14:30、16:00-19:00</td><td><span class="badge badge-green">排骨飯/爌肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=白米香現炸排骨專賣店+桃園" target="_blank">白米香現炸排骨專賣店</a></td><td>中正路629號</td><td>10:45-19:45</td><td><span class="badge badge-green">現炸排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=福山排骨便當專賣+桃園" target="_blank">福山排骨便當專賣 縣府店</a></td><td>縣府路222號</td><td>10:30-14:00、16:30-19:30</td><td><span class="badge badge-green">排骨飯/雞腿飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=梁師傅雞腿大王南崁店+桃園" target="_blank">梁師傅雞腿大王 南崁店</a></td><td>南崁路331號2樓</td><td>10:30-20:00</td><td><span class="badge badge-green">雞腿飯/排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=正忠排骨飯中壢店+桃園" target="_blank">正忠排骨飯 中壢店</a></td><td>中央西路二段10號</td><td>10:30-20:00</td><td><span class="badge badge-green">排骨飯/雞腿飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=中央排骨飯+桃園中壢" target="_blank">中央排骨飯</a></td><td>中央西路一段44號</td><td>11:00-14:00、17:00-19:30</td><td><span class="badge badge-green">排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=林焢肉大王無名排骨飯+桃園中壢" target="_blank">林焢肉大王 無名排骨飯</a></td><td>民權路155-119號</td><td>09:00-20:00</td><td><span class="badge badge-green">排骨飯/雞腿飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=焢肉大王八德+桃園" target="_blank">焢肉大王 八德店</a></td><td>介壽路一段709號</td><td>10:00-20:00</td><td><span class="badge badge-green">焢肉飯/豬腳飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大湳小林雞排肉羹+桃園" target="_blank">大湳小林雞排肉羹</a></td><td>廣福路107號</td><td>11:00-18:30</td><td><span class="badge badge-green">雞排飯/便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿三便當社禾米便當社+桃園" target="_blank">禾米便當社 阿三便當社</a></td><td>南崁路二段230號</td><td>09:30-11:30</td><td><span class="badge badge-green">排骨飯/焢肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=今一排骨大竹+桃園" target="_blank">今一排骨 大竹店</a></td><td>南竹路五段142-1號</td><td>10:00-14:00、16:00-20:00</td><td><span class="badge badge-green">排骨飯/雞腿飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=豪朕殿椒麻雞大王+桃園蘆竹" target="_blank">豪朕殿椒麻雞大王</a></td><td>吉林路156巷52號</td><td>11:30-14:00、17:00-20:00</td><td><span class="badge badge-green">椒麻雞腿飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=烹鼎鵝肉+桃園蘆竹" target="_blank">烹鼎鵝肉 南崁店</a></td><td>南祥路13號</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">鵝肉飯/便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=國鼎鵝肉飯玉里麵八德+桃園" target="_blank">國鼎鵝肉飯玉里麵 八德店</a></td><td>介壽路二段14號</td><td>09:30-21:00</td><td><span class="badge badge-green">鵝肉飯/玉里麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿里山畚箕湖鐵路便當八德+桃園" target="_blank">阿里山畚箕湖鐵路便當 八德店</a></td><td>廣福路63號</td><td>10:30-20:00</td><td><span class="badge badge-green">滷排骨/滷雞腿便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=豐米便當八德介壽店+桃園" target="_blank">豐米便當 八德介壽店</a></td><td>介壽路二段324號</td><td>10:30-13:30、16:30-19:30</td><td><span class="badge badge-green">雞腿飯/排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=上野烤肉飯+桃園" target="_blank">上野烤肉飯 桃園店</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">烤肉飯/雞腿飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=南竹精緻便當+桃園蘆竹" target="_blank">南竹精緻便當</a></td><td>南竹路五段263號</td><td>10:30-14:00、16:30-20:00</td><td><span class="badge badge-green">椒麻雞/排骨便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=木利廣式燒腊店八德+桃園" target="_blank">木利廣式燒腊店</a></td><td>大成街2號</td><td>10:00-14:00</td><td><span class="badge badge-green">燒臘便當/三寶飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=巧口快餐店龜山+桃園" target="_blank">巧口快餐店 龜山店</a></td><td>大同路111-5號</td><td>10:00-19:00</td><td><span class="badge badge-green">快餐便當/排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=百味佳台式自選快餐龜山+桃園" target="_blank">百味佳台式自選快餐 龜山店</a></td><td>忠誠街42號</td><td>10:30-13:30</td><td><span class="badge badge-green">滷排骨便當/快餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=義成美食坊龜山+桃園" target="_blank">義成美食坊 龜山店</a></td><td>中興路301號</td><td>10:30-13:30</td><td><span class="badge badge-green">雞腿飯/快餐便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=綸記正宗燒腊快餐龜山+桃園" target="_blank">綸記正宗燒腊快餐 龜山店</a></td><td>中興路366-4號</td><td>10:30-14:00、16:30-19:00</td><td><span class="badge badge-green">燒臘便當/招牌飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=久米本舖龜山+桃園" target="_blank">久米本舖 龜山店</a></td><td>萬壽路二段934號</td><td>10:30-14:00、16:30-19:00</td><td><span class="badge badge-green">油飯便當/松阪豬飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=劉魯肉飯的故鄉中壢+桃園" target="_blank">劉魯肉飯的故鄉</a></td><td>中正路235號</td><td>10:00-02:00</td><td><span class="badge badge-green">滷肉飯/骨仔肉湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=梅亭雞肉飯中壢+桃園" target="_blank">梅亭雞肉飯 中平店</a></td><td>中平路87號</td><td>09:00-21:00</td><td><span class="badge badge-green">雞肉飯/綜合飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=嘉義大鍋湯雞肉飯魯肉飯中壢+桃園" target="_blank">嘉義大鍋湯雞肉飯魯肉飯</a></td><td>志廣路62號</td><td>16:00-00:30</td><td><span class="badge badge-green">雞魯飯/大鍋湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=林厝火雞肉飯專賣店+桃園" target="_blank">林厝火雞肉飯專賣店</a></td><td>三民路三段209號</td><td>11:00-21:00</td><td><span class="badge badge-green">火雞肉飯/雞滷飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=小老闆雞肉飯大竹總店+桃園" target="_blank">小老闆の雞肉飯 大竹總店</a></td><td>大竹路409號</td><td>10:15-20:00</td><td><span class="badge badge-green">雞肉飯/魯肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿泓雞肉飯+桃園" target="_blank">阿泓雞肉飯</a></td><td>中正路237號</td><td>16:00-04:00</td><td><span class="badge badge-green">雞滷飯/焢肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=謝家魯肉飯大竹+桃園" target="_blank">謝家魯肉飯 大竹店</a></td><td>大竹路326號</td><td>05:00-13:00</td><td><span class="badge badge-green">滷肉飯/排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大小魯肉飯+桃園蘆竹" target="_blank">大小魯肉飯 南崁店</a></td><td>南崁路333號</td><td>11:00-23:20</td><td><span class="badge badge-green">滷肉飯/雞排飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=道地魯肉飯+桃園蘆竹" target="_blank">道地魯肉飯 南崁店</a></td><td>光明路二段16號</td><td>10:30-21:30</td><td><span class="badge badge-green">滷肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=676滷肉飯+桃園" target="_blank">676滷肉飯</a></td><td>大有路676號</td><td>07:00-20:00</td><td><span class="badge badge-green">滷肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=古早田魯肉飯+桃園" target="_blank">古早田魯肉飯</a></td><td>大業路一段256號</td><td>17:00-23:00</td><td><span class="badge badge-green">魯肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=台南人肉羹麵滷肉飯+桃園" target="_blank">台南人肉羹麵滷肉飯</a></td><td>延平路121號</td><td>07:30-14:00、16:00-19:30</td><td><span class="badge badge-green">滷肉飯/肉羹麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=陳家魯肉飯擔仔麵+桃園" target="_blank">陳家魯肉飯擔仔麵</a></td><td>大同路63號</td><td>12:00-20:00</td><td><span class="badge badge-green">魯肉飯/餛飩麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=胡記滷肉飯+桃園" target="_blank">胡記滷肉飯 桃園店</a></td><td>中正路藝文特區</td><td>11:00-21:00</td><td><span class="badge badge-green">滷肉飯/便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=桃源號魯肉飯南門市場+桃園" target="_blank">桃源號魯肉飯 南門市場</a></td><td>南門市場</td><td>07:00-14:00</td><td><span class="badge badge-green">滷肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=有肉燥也有滷肉飯+桃園" target="_blank">有肉燥也有滷肉飯方焢肉飯</a></td><td>中山北路64號</td><td>11:00-20:30</td><td><span class="badge badge-green">滷肉飯/焢肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鬍鬚張魯肉飯南崁南竹店+桃園" target="_blank">鬍鬚張魯肉飯 南崁南竹店</a></td><td>南竹路一段62號</td><td>10:30-22:30</td><td><span class="badge badge-green">魯肉飯/雞腿</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=上座古傳滷肉飯專賣店龜山+桃園" target="_blank">上座古傳滷肉飯專賣店 龜山店</a></td><td>萬壽路二段1242-7號</td><td>10:00-13:00、16:30-20:30</td><td><span class="badge badge-green">滷肉飯/古早味便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=萬壽路無名小吃店龜山+桃園" target="_blank">萬壽路無名小吃店 龜山</a></td><td>萬壽路二段120號</td><td>07:00-14:00</td><td><span class="badge badge-green">魯肉飯/乾麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=永川牛肉麵中壢+桃園" target="_blank">永川牛肉麵 中壢總店</a></td><td>民權路61-1號</td><td>24小時營業</td><td><span class="badge badge-green">川味牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=新明牛肉麵中壢+桃園" target="_blank">新明老牌牛肉麵</a></td><td>民權路65號</td><td>08:40-23:00</td><td><span class="badge badge-green">紅燒牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=集英會牛肉麵館中壢+桃園" target="_blank">集英會牛肉麵館 中原店</a></td><td>三和一街27號</td><td>11:00-21:30</td><td><span class="badge badge-green">川味牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=尋味麵舖中壢+桃園" target="_blank">尋味麵舖 牛肉麵拌麵</a></td><td>中央西路二段265號</td><td>11:00-14:00、17:00-20:30</td><td><span class="badge badge-green">牛肉麵/乾拌麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=川驕牛肉麵專門店+桃園" target="_blank">川驕牛肉麵專門店 藝文店</a></td><td>中正路1023號</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">紅燒/清燉牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=巧合珍牛肉麵南平藝文店+桃園" target="_blank">巧合珍牛肉麵 南平藝文店</a></td><td>南平路260號</td><td>11:00-15:00、17:00-21:00</td><td><span class="badge badge-green">牛肉麵/滷味</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=麵大廚藝文店+桃園" target="_blank">麵大廚 藝文店</a></td><td>中埔六街186號</td><td>11:30-14:00、17:00-21:00</td><td><span class="badge badge-green">腱心牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=辣妹子牛肉麵中壢+桃園" target="_blank">辣妹子牛肉麵</a></td><td>環中東路17號</td><td>11:00-14:00、16:30-20:30</td><td><span class="badge badge-green">牛肉麵/滷肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=仁聚牛肉麵龜山+桃園" target="_blank">仁聚牛肉麵</a></td><td>中興路一段38號</td><td>10:00-21:00</td><td><span class="badge badge-green">牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=牛老闆牛肉麵中壢+桃園" target="_blank">牛老闆牛肉麵 中壢店</a></td><td>環中東路</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=老張記川味牛肉麵藝文特區+桃園" target="_blank">老張記川味牛肉麵 藝文店</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">紅燒半筋半肉牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=巧合珍牛肉麵春日總店+桃園" target="_blank">巧合珍牛肉麵 春日總店</a></td><td>春日路</td><td>11:00-15:00、17:00-21:00</td><td><span class="badge badge-green">牛肉麵/滷味</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=三妹牛肉麵+桃園" target="_blank">三妹牛肉麵</a></td><td>桃園區</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=來來麵食館+桃園" target="_blank">來來麵食館 南平店</a></td><td>南平路389號</td><td>11:00-14:30、16:30-21:00</td><td><span class="badge badge-green">水餃/蔥油餅/蒸餃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=季節水餃龜山+桃園" target="_blank">季節水餃 龜山店</a></td><td>自強東路115號</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">手工水餃/韭黃蝦仁</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=老店水餃春日路+桃園" target="_blank">老店水餃 朝陽市場</a></td><td>春日路232號</td><td>11:00-18:00</td><td><span class="badge badge-green">手工水餃/酸辣湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿美水餃八德+桃園" target="_blank">阿美水餃 八德店</a></td><td>桃鶯路18號</td><td>08:00-18:00</td><td><span class="badge badge-green">生鮮水餃/手工水餃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大湳蒸餃八德+桃園" target="_blank">大湳蒸餃 八德店</a></td><td>廣福路20巷35弄36號</td><td>06:00-12:30、16:00-19:00</td><td><span class="badge badge-green">蒸餃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=水餃大王八德大同+桃園" target="_blank">水餃大王 八德大同店</a></td><td>大同路24號</td><td>09:00-20:00</td><td><span class="badge badge-green">水餃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=山東餃子館+桃園" target="_blank">山東餃子館 桃園店</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-21:00</td><td><span class="badge badge-green">水餃/麵食</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=餃頭仔水餃專賣+桃園" target="_blank">餃頭仔 水餃專賣店</a></td><td>桃園區</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">手工水餃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=五花馬水餃館桃園+桃園" target="_blank">五花馬水餃館 桃園店</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-21:00</td><td><span class="badge badge-green">水餃/牛肉捲餅</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=楊切仔麵+桃園" target="_blank">楊切仔麵 民生店</a></td><td>民生路368號</td><td>16:00-00:30</td><td><span class="badge badge-green">切仔麵/黑白切</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=南門市場米粉湯+桃園" target="_blank">南門市場米粉湯</a></td><td>南昌東街9號</td><td>06:30-14:00</td><td><span class="badge badge-green">米粉湯/黑白切</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=無名米粉湯鐵皮屋米粉湯+桃園" target="_blank">無名米粉湯 鐵皮屋米粉湯</a></td><td>成功路三段181號</td><td>06:00-14:30</td><td><span class="badge badge-green">米粉湯/黑白切</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=竹仔下米粉湯八德+桃園" target="_blank">竹仔下米粉湯 八德店</a></td><td>東勇北路386號</td><td>06:30-11:30</td><td><span class="badge badge-green">米粉湯/黑白切</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=金小蔥雞湯米粉+桃園" target="_blank">金小蔥雞湯米粉 藝文店</a></td><td>南平路572號</td><td>10:30-18:30</td><td><span class="badge badge-green">雞湯米粉/小卷米粉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=切仔郎八德+桃園" target="_blank">切仔郎 八德店</a></td><td>廣福路20巷8號</td><td>10:00-14:00、17:00-20:30</td><td><span class="badge badge-green">切仔麵/黑白切</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大廟口切仔麵八德桃拾廣場+桃園" target="_blank">大廟口切仔麵 八德桃拾店</a></td><td>金和路23號</td><td>11:00-21:00</td><td><span class="badge badge-green">切仔麵/蚵仔麵線/黑白切</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=小料理海米粉莊敬店+桃園" target="_blank">小料理海米粉 莊敬店</a></td><td>新埔十街50-5號</td><td>11:00-14:30、17:00-20:10</td><td><span class="badge badge-green">海鮮米粉/滷肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鄉村切仔麵八德+桃園" target="_blank">鄉村切仔麵 八德店</a></td><td>介壽路二段933巷26號</td><td>11:00-13:00、16:30-19:00</td><td><span class="badge badge-green">切仔麵/肉羹米粉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=辣食堂龜山+桃園" target="_blank">辣食堂 龜山後街店</a></td><td>中興路403號</td><td>10:30-22:00</td><td><span class="badge badge-green">剝皮辣椒麵/紅油抄手</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=茅屋麵食蘆竹+桃園" target="_blank">茅屋麵食 南崁店</a></td><td>洛陽街107號</td><td>11:00-14:00、17:00-21:00</td><td><span class="badge badge-green">麻醬麵/韓式炸醬麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=傻瓜乾麵+桃園中正路" target="_blank">福州傻瓜乾麵 桃園店</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-20:30</td><td><span class="badge badge-green">傻瓜乾麵/餛飩湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=老北方麵食館+桃園" target="_blank">老北方麵食館 桃園店</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-20:30</td><td><span class="badge badge-green">刀削麵/麻醬麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿婆麵桃園+桃園" target="_blank">阿婆麵 桃園店</a></td><td>民權路</td><td>07:00-14:00</td><td><span class="badge badge-green">陽春麵/餛飩麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=陳家陽春麵+桃園" target="_blank">陳家陽春麵 桃園店</a></td><td>中正路藝文特區</td><td>11:00-20:00</td><td><span class="badge badge-green">陽春麵/麻醬麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿宏陽春麵+桃園" target="_blank">阿宏陽春麵 桃園店</a></td><td>民生路</td><td>11:00-21:00</td><td><span class="badge badge-green">陽春麵/榨菜肉絲麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=正宗四川麵食中壢+桃園" target="_blank">正宗四川麵食 中壢店</a></td><td>中正路</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">擔擔麵/乾麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=維記麵食+桃園" target="_blank">維記麵食 桃園店</a></td><td>大興西路</td><td>11:00-14:30、17:00-20:30</td><td><span class="badge badge-green">雲吞麵/撈麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=南崁生炒羊肉+桃園蘆竹" target="_blank">南崁生炒羊肉</a></td><td>南山路一段1-2號</td><td>17:00-03:00</td><td><span class="badge badge-green">羊肉炒麵/羊肉燴飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=桃園牛丼便當南門市場+桃園" target="_blank">桃園牛丼便當 南門市場</a></td><td>南門市場旁</td><td>10:30-14:00</td><td><span class="badge badge-green">牛丼/排骨飯/豬腳飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=珍香排骨便當+桃園" target="_blank">珍香排骨 桃園店</a></td><td>中正路藝文特區</td><td>10:30-14:00、16:30-19:30</td><td><span class="badge badge-green">排骨飯/雞腿飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=金園排骨中壢+桃園" target="_blank">金園排骨 中壢店</a></td><td>中正路</td><td>10:30-20:00</td><td><span class="badge badge-green">排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=開講速食餐飲+桃園" target="_blank">開講速食餐飲 中正店</a></td><td>中正路60-19號</td><td>09:15-00:00</td><td><span class="badge badge-green">烤雞腿特餐</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=張媽魯肉飯桃園+桃園" target="_blank">張媽魯肉飯 桃園店</a></td><td>大興西路</td><td>11:00-21:00</td><td><span class="badge badge-green">滷肉飯/雞肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿嬤ㄟ灶腳藝文特區+桃園" target="_blank">阿嬤ㄟ灶腳 藝文店</a></td><td>藝文特區</td><td>17:00-01:00</td><td><span class="badge badge-green">滷肉飯/海鮮粥</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大眾快餐中壢+桃園" target="_blank">大眾快餐 中壢店</a></td><td>中央西路</td><td>10:30-14:00、16:30-19:30</td><td><span class="badge badge-green">快餐便當/排骨飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=好香香便當+桃園" target="_blank">好香香便當 桃園店</a></td><td>中正路藝文特區</td><td>10:30-14:00、16:30-19:30</td><td><span class="badge badge-green">雞腿飯/爌肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=港龘桃園店便當+桃園" target="_blank">港龘桃園店 便當外賣</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">牛肉牛筋雙拼便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=李銘記烤鴨便當+桃園" target="_blank">李銘記烤鴨 平鎮店</a></td><td>平鎮區</td><td>10:30-19:30</td><td><span class="badge badge-green">烤鴨便當/燒臘</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=皇佳燒臘便當八德+桃園" target="_blank">皇佳燒臘便當 八德店</a></td><td>興豐路</td><td>10:30-14:00、16:30-19:30</td><td><span class="badge badge-green">燒臘便當/三寶飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=食在港城燒臘八德+桃園" target="_blank">食在港城燒臘 八德廣福店</a></td><td>廣福路</td><td>10:30-14:00、16:30-19:30</td><td><span class="badge badge-green">燒臘便當/叉燒飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=職人燒臘肉坊桃園+桃園" target="_blank">職人燒臘肉坊 桃園店</a></td><td>桃園區</td><td>10:30-14:00、16:30-19:30</td><td><span class="badge badge-green">燒臘便當</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿來米粉湯+桃園" target="_blank">阿來米粉湯 桃園店</a></td><td>中山路</td><td>06:30-14:00</td><td><span class="badge badge-green">米粉湯/黑白切</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=中壢後站米粉湯+桃園" target="_blank">後站米粉湯 中壢店</a></td><td>中壢後站</td><td>06:30-13:30</td><td><span class="badge badge-green">米粉湯/黑白切</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=市場米粉湯中壢+桃園" target="_blank">市場米粉湯 中壢新明店</a></td><td>新明市場</td><td>06:00-13:00</td><td><span class="badge badge-green">米粉湯/黑白切</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=義勇街米粉湯+桃園" target="_blank">義勇街米粉湯 桃園店</a></td><td>義勇街</td><td>06:30-14:00</td><td><span class="badge badge-green">米粉湯/黑白切</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=山西刀削麵中壢+桃園" target="_blank">山西刀削麵 中壢店</a></td><td>中央西路</td><td>11:00-14:00、17:00-20:30</td><td><span class="badge badge-green">刀削麵/牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=老陳牛肉麵八德+桃園" target="_blank">老陳牛肉麵 八德店</a></td><td>介壽路</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">牛肉麵/水餃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=信義牛肉麵中壢+桃園" target="_blank">信義牛肉麵 中壢店</a></td><td>中平路</td><td>11:00-21:00</td><td><span class="badge badge-green">牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=原味牛肉麵中壢+桃園" target="_blank">原味牛肉麵 中壢店</a></td><td>中正路</td><td>10:30-20:30</td><td><span class="badge badge-green">紅燒牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=段純貞牛肉麵桃園+桃園" target="_blank">段純貞牛肉麵 桃園店</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-20:30</td><td><span class="badge badge-green">牛肉麵/滷味</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=永康牛肉麵桃園+桃園" target="_blank">永康牛肉麵 桃園店</a></td><td>大興西路</td><td>11:00-14:30、17:00-21:00</td><td><span class="badge badge-green">紅燒牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=鑫鱻牛肉麵+桃園" target="_blank">鑫鱻牛肉麵 桃園店</a></td><td>中正路藝文特區</td><td>11:00-14:30、17:00-20:30</td><td><span class="badge badge-green">牛肉麵/清燉</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=老牛牛肉麵+桃園" target="_blank">老牛牛肉麵 桃園店</a></td><td>三民路</td><td>11:00-21:00</td><td><span class="badge badge-green">紅燒/清燉牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=榮記牛肉麵中壢+桃園" target="_blank">榮記牛肉麵 中壢店</a></td><td>中豐路</td><td>11:00-14:00、17:00-20:30</td><td><span class="badge badge-green">紅燒牛肉麵/牛雜</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=錦家牛肉麵中壢+桃園" target="_blank">錦家牛肉麵 中壢店</a></td><td>中山路</td><td>11:00-14:00、17:00-20:30</td><td><span class="badge badge-green">牛肉麵/牛雜湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=阿玉水餃+桃園" target="_blank">阿玉水餃 桃園店</a></td><td>春日路</td><td>10:00-14:00、16:30-19:00</td><td><span class="badge badge-green">水餃/酸辣湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=餃子大王蘆竹+桃園" target="_blank">餃子大王 蘆竹店</a></td><td>南崁路</td><td>10:30-14:00、16:30-20:00</td><td><span class="badge badge-green">水餃/湯餃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=來甲餃子青埔+桃園" target="_blank">來甲餃子 青埔店</a></td><td>青埔</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">冰花煎餃/水餃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=益鼎水餃+桃園" target="_blank">益鼎水餃 桃園店</a></td><td>大業路</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">水餃/牛肉麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大溪水餃大王+桃園" target="_blank">水餃大王 大溪店</a></td><td>康莊路</td><td>10:00-19:00</td><td><span class="badge badge-green">水餃/酸辣湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=上野烤肉飯南崁+桃園" target="_blank">上野烤肉飯 南崁店</a></td><td>南崁路</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">烤肉飯/雞腿飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=好康快餐便當+桃園" target="_blank">好康快餐 桃園店</a></td><td>民生路</td><td>10:30-14:00、16:30-19:30</td><td><span class="badge badge-green">快餐便當/雞腿飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=大湳市場無名乾麵八德+桃園" target="_blank">大湳市場無名乾麵 八德</a></td><td>廣福路20巷</td><td>07:00-13:00</td><td><span class="badge badge-green">乾麵/餛飩湯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=中壢無名乾麵建國路+桃園" target="_blank">中壢無名乾麵 建國店</a></td><td>建國路65號</td><td>10:30-18:00</td><td><span class="badge badge-green">乾意麵/滷肉飯</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=李記麵食館中壢+桃園" target="_blank">李記麵食館 中壢店</a></td><td>中豐路82號</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">榨菜肉絲粄條/水餃</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=潮州麵食館+桃園" target="_blank">潮州麵食館 桃園店</a></td><td>中正路藝文特區</td><td>11:00-14:00、17:00-20:30</td><td><span class="badge badge-green">餛飩麵/麻醬麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=老孫大麵龜山+桃園" target="_blank">老孫大麵 龜山店</a></td><td>中興路</td><td>07:00-14:00</td><td><span class="badge badge-green">陽春麵/麻醬麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=小林小吃龜山+桃園" target="_blank">小林小吃 龜山後街</a></td><td>中興路</td><td>11:00-20:00</td><td><span class="badge badge-green">陽春麵/餛飩麵/黑白切</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=老邵陽春麵龜山+桃園" target="_blank">老邵陽春麵 龜山店</a></td><td>萬壽路</td><td>11:00-14:00、17:00-20:00</td><td><span class="badge badge-green">陽春麵/餛飩麵</span></td></tr>
+<tr><td><a href="https://maps.google.com/?q=八德玉里麵+桃園" target="_blank">玉里麵 八德店</a></td><td>介壽路</td><td>09:00-20:00</td><td><span class="badge badge-green">玉里麵/鵝肉飯</span></td></tr>
+</tbody>
+</table>
+<div class="footer">
+<p><strong>合雄帝璽・桃園藝文特區</strong> — 周圍餐廳總覽（擴充版）</p>
+<p style="font-size:0.85em;color:#888;margin-top:6px;">資料整理於 2026年5月 · 點擊店名可查看 Google Maps 位置</p>
+</div>
+<script>
+(function() {
+  var tables = document.querySelectorAll('table');
+  var sel = document.getElementById('cat');
+  var q = document.getElementById('q');
+  var cnt = document.getElementById('cnt');
+  function resetRows() {
+    tables.forEach(function(t) {
+      t.querySelectorAll('tbody tr').forEach(function(r) { r.style.display = ''; });
+    });
+  }
+  function update() {
+    var val = sel.value;
+    var keyword = q.value.trim().toLowerCase();
+    var total = 0;
+    tables.forEach(function(t) {
+      var catMatch = (val === 'all' || t.getAttribute('data-cat') === val);
+      if (!catMatch) { t.classList.remove('active'); return; }
+      if (!keyword) {
+        t.classList.add('active');
+        t.querySelectorAll('tbody tr').forEach(function(r) { r.style.display = ''; });
+        total += t.querySelectorAll('tbody tr').length;
+        return;
+      }
+      var rows = t.querySelectorAll('tbody tr');
+      var hasVisible = false;
+      rows.forEach(function(r) {
+        if (r.textContent.toLowerCase().indexOf(keyword) !== -1) {
+          r.style.display = '';
+          hasVisible = true;
+        } else {
+          r.style.display = 'none';
+        }
+      });
+      if (hasVisible) { t.classList.add('active'); total += t.querySelectorAll('tbody tr:not([style*=\"none\"])').length; }
+      else { t.classList.remove('active'); }
+    });
+    if (cnt) cnt.textContent = '共 ' + total + ' 間餐廳';
+  }
+  sel.addEventListener('change', update);
+  q.addEventListener('input', update);
+  document.getElementById('clearBtn').addEventListener('click', function() { q.value = ''; update(); q.focus(); });
+  update();
+})();
+</script>
+</body>
+</html>
